@@ -1051,8 +1051,9 @@ static void mme_s6a_ula_cb(void *data, struct msg **msg)
     }
     else
     {
-        d_error("no_Subscribed_RAU-TAU-Timer");
-        error++;
+        //d_error("no_Subscribed_RAU-TAU-Timer");
+        //error++;
+        subscription_data->subscribed_rau_tau_timer = 720;
     }
     
     if (!error)
